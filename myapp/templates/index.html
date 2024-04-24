@@ -1,4 +1,10 @@
+{% extends 'layouts/base.html' %} 
+
+{% load static %}
+
+{% block content %}
 <h1>{{ title }}</h1>
+<img src="{% static 'tarifas.jpg' %}" alt="" width="500"/>
 <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore libero
     nostrum consequuntur totam necessitatibus, repellendus quisquam animi, dolor
@@ -12,3 +18,4 @@
     necessitatibus quae, commodi doloremque ipsam sit impedit soluta maiores,
     aliquam rerum!
 </p>
+{% endblock %}
